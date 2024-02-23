@@ -1,9 +1,11 @@
 import Counter from "./Components/Counter";
+import Display from "./Components/Display";
 
 function App() {
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+      <Display />
     </>
   );
 }
