@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchData = createAsyncThunk("data/fetchData", async () => {
+export const fetchData = createAsyncThunk("fetchData", async () => {
   const response = await axios.get("https://fakestoreapi.com/products");
   return response.data;
 });
@@ -15,6 +15,7 @@ const FetchAPIReducer = createSlice({
   },
   reducers: {},
   extraReducers: (builder) => {
+    console.log(builder, "builder");
     builder
       .addCase(fetchData.pending, (state) => {
         state.loading = "pending";
