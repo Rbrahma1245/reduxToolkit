@@ -15,7 +15,7 @@ const FetchAPIReducer = createSlice({
   },
   reducers: {},
   extraReducers: (builder) => {
-    console.log(builder, "builder");
+    // console.log(builder, "builder");
     builder
       .addCase(fetchData.pending, (state) => {
         state.loading = "pending";
