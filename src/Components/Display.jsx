@@ -2,11 +2,11 @@
 // YourClassComponent.js
 import { Component } from "react";
 import { connect } from "react-redux";
-import { fetchData } from "../Reducer/FetchAPIReducer";
+import { fetchAPI } from "../Reducer/FetchAPIReducer";
 
 class Display extends Component {
   componentDidMount() {
-    this.props.fetchData();
+    this.props.fetchAPI();
   }
 
   render() {
@@ -39,4 +39,4 @@ const mapStateToProps = (state) => {
   return { loading, data, error };
 };
 
-export default connect(mapStateToProps, { fetchData })(Display);
+export default connect(mapStateToProps, { fetchAPI })(Display);

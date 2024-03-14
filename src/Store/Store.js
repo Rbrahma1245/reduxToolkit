@@ -1,14 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import CounterReducer from "../Reducer/CounterReducer";
-import FetchAPIReducer from "../Reducer/FetchAPIReducer";
-import TodoReducer from "../Reducer/TodoReducer";
+import rootReducer from "../Reducer/RootReducer";
 
 const store = configureStore({
-  reducer: {
-    counter: CounterReducer,
-    fetchAPI: FetchAPIReducer,
-    todo: TodoReducer,
-  },
+  reducer: rootReducer,
 });
 
 export default store;
