@@ -1,9 +1,13 @@
-import Counter from "./Components/Counter";
+// import Counter from "./Components/Counter";
+// import Display from "./Components/Display";
+import Todo from "./Components/Todo";
 
 function App() {
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+      {/* <Display /> */}
+      <Todo />
     </>
   );
 }
